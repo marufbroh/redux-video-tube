@@ -6,7 +6,7 @@ import Error from "../ui/Error";
 import Success from "../ui/Success";
 
 export default function Form() {
-  const [addVideo, { data: video, isLoading, isError, isSuccess }] =
+  const [addVideo, { isLoading, isError, isSuccess }] =
     useAddVideoMutation();
 
   const [title, setTitle] = useState("");
